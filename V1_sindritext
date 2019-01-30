@@ -1,0 +1,66 @@
+Sindri Snær Hjaltalín.
+#1.gameloop her mikilvægur partur af leiknum þínum og er brotið niður í 3 parta initialize, update and draw.
+initialize þar gerir þú allt tilbúið eins go umhverfið menu
+gameloop stjórnar hraða leiksins og heldur áfram þángað til þú hættir hver hringur eða loopa er kallað frame
+dæmi um gameloop
+while game is running
+    process inputs
+    update game world
+    generate outputs
+loop
+
+#2.leikjavél er software umhverfi sem er hannað fyrir tölvuleika forritara og inniheladur öllu þvi helsta sem þeir þurfa
+td rendering engine physices engine collison dettection
+unity er free software og betri útgáfan kostar ekki mikið en unreal er dýrt og þú þarft góða tölvu til að geta keyrt unreal
+unreal er getur hinsvegar gert miklu betri graphics
+unity er meira beginner friendly og meira gui
+unreal er erfiðara að læra og nota er meira um að kóða
+
+#3.
+typedef struct {
+    float x;
+    float y;
+} Vector2;
+
+typedef struct {
+    Vector2 min;
+    Vector2 max;
+} AABB;
+
+
+BOOL TestAABBOverlap(AABB* a, AABB* b)
+{
+    float d1x = b->min.x - a->max.x;
+    float d1y = b->min.y - a->max.y;
+    float d2x = a->min.x - b->max.x;
+    float d2y = a->min.y - b->max.y;
+
+    if (d1x > 0.0f || d1y > 0.0f)
+        return FALSE;
+
+#4. Asset eru viðbót sem eru gerð af fólki inní eaða utan unity sem fólk getur downloadað og nýt sér td 3D modle, an audio file, an image
+
+    if (d2x > 0.0f || d2y > 0.0f)
+        return FALSE;
+
+    return TRUE;
+}
+
+#5.game object eru hlutir sem þú býrð til í unity eins go kassar og fleira þegar þú clickar á gameobject sérðu allar upplysingar um hann í inspector og getur breytt hveru sem er
+
+
+#6.prefab er eins og built in dót sem þú getur dragið inn og notað það er mjög fljót fært og hentugt
+
+
+#7. allt er í runni sínum þríhyrningar, Triangle Rasterization er hvering tölvur rendera object/hluti  á sjáinn
+   þetta re gert að því þú gettur splittað öllu í þryhirninga en ekki þyrherning í eitthvað annað
+
+#8.layers eru mikið notaðir til að passa að aðferðir eins og raycasting eða rendering gerist ekki við allt heldur einángrar layers það
+ tags og layers eru notað til að flokka ekki ó sviða og // í forritun en enþá nothæfara
+
+#9. secen view sínir leikin sjálfan alla hluti
+   game view er þegar leikurinn er keyrður
+   project er verkefnið sjált
+   inspetor leifir þer að skoða hluti eins og game objects og hvaða properties þeir hafa
+   hierarchy sýnir hvaða roð hlutinir liggja þannig eins og píramíti, hefur öll game objects í listum eins og
+
