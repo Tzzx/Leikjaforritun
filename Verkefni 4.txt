@@ -1,0 +1,32 @@
+1.
+Unity is equally suited to creating both 2D and 3D games.
+When you create a new project in Unity, you have the choice to start
+in 2D or 3D mode. You may already know what you want to
+build, but there are a few subtle points that may affect which mode you choose.
+The choice between starting in2D or 3D mode determines some settings for the
+Unity Editor, such as whether images are imported as textures or sprites
+You can swap between 2D or 3D mode at any time regardless
+of the mode you set when you created your project
+that's super convenient 
+
+2.
+Single Screen where very common way back in the day
+like during the Atari periond duo to there simle disng.
+Single screen games are easily identified as each level or the
+entire game takes place on a a single screen the camera / point of
+view almost never changes a single screen game that everyone knows
+is Pac-man the diffculty may increase with each level more enamys
+can appare and the settings and landscape may change slightly
+
+3.
+2.5D means almost exclusively you are using 2D images(sprites)
+to render your world even if it looks 3D its not examples of games
+that have done this to grate sucsuess Clash of clans looks 3D but in
+reality is a 2.5D game .The only differance really is the use of
+the Z-Axis to slightly move up or down this is an extra game play aspect
+that can be very good/useful to have when creating serten types of
+games.
+
+
+
+
